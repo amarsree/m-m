@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+	<title>theml</title>
+</head>
+<body>
+<h1>hest</h1>
+<ol>
+<div id="data"></div>
+</ol>
+<script src="jquery.js"></script>
+<script  src="chat/javascript.js"></script>
+<script  type="text/javascript" >
+	$(function(){
+			  //	alert();
+			/*  	$.ajax({
+			  		url : "json.json",
+			  		success : function(a){
+			  			//alert(a["2"]["mid"]);
+
+
+			 	 $("#data").html(a);
+			 	//$("#data").append("<li>"+ww+"</li>");
+			 }
+			 })*/
+
+$.getJSON("onload.php", function(data){
+var output = '<ol>';
+$.each(data,function(key,val){
+output +='<li>';
+output +='<h2>'+val.mid+'</h2>';
+output +='<p>'+ val.msg+'</p><br>';
+
+});
+output += "</ol>";
+$("#data").html(output);
+});
+
+			  	});
+
+
+
+
+</script>
+</body>
+</html>
