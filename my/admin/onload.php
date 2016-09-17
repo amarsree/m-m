@@ -1,8 +1,9 @@
 <?php 
 
 include 'dbconn.php';
- 
-$result = $conn->query("SELECT mid,msg,user from (SELECT mid,msg,user FROM `chat` ORDER BY mid DESC LIMIT 20) AS Last5 ORDER BY mid ASC");
+ $uid=$_POST['uid'];
+//$uid=26;
+$result = $conn->query("SELECT mid,msg,user from (SELECT mid,msg,user FROM `$uid` ORDER BY mid DESC LIMIT 20) AS Last5 ORDER BY mid ASC");
 $json_array =	array();
 
 while ($row = mysqli_fetch_assoc($result))

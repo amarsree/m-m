@@ -28,7 +28,7 @@
 								*/
 								
 								/*mysqli_query($conn,"insert into reg (fname,lname,email,pswd,mno,dob) values('$fname','$lname','$email','$pswd','$mno','$dob')");*/
-							//	mysqli_query($conn,"insert into reg (fname,lname,email,pswd) values('$fname','$lname','$email','$pswd');");
+								mysqli_query($conn,"insert into reg (fname,lname,email,pswd) values('$fname','$lname','$email','$pswd');");
 $rset = mysqli_query($conn, "select max(uid) as mx from reg");
 	 // $row=mysqli_fetch_array($rset);
 	 $row=mysqli_fetch_array($rset);

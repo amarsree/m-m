@@ -21,7 +21,7 @@
 <!-- MESSAGES  -->
 <div class="col-xs-12 col-sm-6 col-md-7 chat_data">
 <div class="name">
-	<h4 >name</h4>
+	<h4></h4>
 </div>
 <div class="msg_dis">
 	<div class="msg_con" id="msg_con">
@@ -30,7 +30,7 @@
 	</div>
 </div>
 	
-	<div class=" msg_send">
+	<div class="msg_send">
 		<textarea  cols="45" rows="1" id="textarea"></textarea>
 		<input type="button" name="send" id="send1" value="send">
 	</div>

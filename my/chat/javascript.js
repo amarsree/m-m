@@ -23,7 +23,7 @@ function load(){
 	 $.getJSON("chat/onload.php", function(data){
 $.each(data,function(key,val){
 	//alert(val.user);
-	if(val.user=="user"){
+	if(val.user=="admin"){
 		myid = $("ul:last").attr("id");
 		if(myid==undefined){
 			create_ul_left(val.msg);
