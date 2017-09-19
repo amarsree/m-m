@@ -12,6 +12,18 @@
 </head>
 <body>
 
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.php">m$m</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li ><a href="index.php">insert new record</a></li>
+      <li><a href="acc.php">add</a></li>
+      
+    </ul>
+  </div>
+</nav>
 
 
 
@@ -86,7 +98,7 @@
                         <input type="text" id="description" class="form-control" name="description" placeholder="description">
                         
                         
-                        <center><input type="submit" class="btn btn-primary m-t-10" id="submitbtn" name="submit" value="Submit"></center>
+                        <center><input type="submit" class="btn btn-primary " id="submitbtn" name="submit" value="Submit"></center>
                         
                     </form>
                     
@@ -102,7 +114,7 @@
 </div> 
 
       
-<table border="1">
+<!-- <table border="1">
 <tr>
   <th>id</th>
   <th>name</th>
@@ -122,7 +134,11 @@
 <td>sdsds</td>
 <td>dsdsdsdsd</td>
 </tr>
-</table>
+</table> -->
+
+
+
+
 </div>
 </div>
 </body>
